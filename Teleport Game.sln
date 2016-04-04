@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{890032AA-C95F-EA2E-BF90-0BC5F23D6343}") = "Teleport Game", "Assembly-CSharp-firstpass.csproj", "{8EFBFA6F-813A-89CB-E740-61EFA78DF57E}"
+EndProject
+Project("{890032AA-C95F-EA2E-BF90-0BC5F23D6343}") = "Teleport Game", "Assembly-CSharp.csproj", "{6ABB8585-8224-0480-E9F3-AD6ACF51C659}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EFBFA6F-813A-89CB-E740-61EFA78DF57E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EFBFA6F-813A-89CB-E740-61EFA78DF57E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EFBFA6F-813A-89CB-E740-61EFA78DF57E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EFBFA6F-813A-89CB-E740-61EFA78DF57E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ABB8585-8224-0480-E9F3-AD6ACF51C659}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ABB8585-8224-0480-E9F3-AD6ACF51C659}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ABB8585-8224-0480-E9F3-AD6ACF51C659}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ABB8585-8224-0480-E9F3-AD6ACF51C659}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
