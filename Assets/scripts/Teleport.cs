@@ -52,7 +52,7 @@ public class Teleport : MonoBehaviour {
 			Vector3 jumpPosition = new Vector3 (transform.position.x, player.transform.position.y + .01f, transform.position.z);
 
 			if (!upButtonDown && !rightButtonDown && !leftButtonDown) {
-				//player.transform.position = jumpPosition;
+				player.transform.position = jumpPosition;
 				transform.position = new Vector3 (player.transform.position.x, transform.position.y, player.transform.position.z);
 				jump = false;
 				sm.EnableSmoothTemporary (0.25f);

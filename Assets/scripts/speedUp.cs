@@ -7,33 +7,42 @@ public class speedUp : MonoBehaviour {
 	public GameObject teleporter;
 	public float speedMultiplyer = 1;
 	public bool initiateSpeed = true;
+	private float tempPlayer;
+	private float tempTele;
+	public bool slowDown = false;
+	public bool initiateSlowDown = false;
 
 	// Use this for initialization
 	void Start () {
-	
+		tempPlayer = player.GetComponent<PlayerMovement> ().speed;
+		tempTele = teleporter.GetComponent<Teleport> ().speed;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		if (initiateSpeed)
-		StartCoroutine (initiate ());
+		if (initiateSpeed && !slowDown) {
+			StartCoroutine (initiate ());
+		}
+
+		if (initiateSlowDown && slowDown) {
+			StartCoroutine (initiateSlow ());
+		}
 
 	}
 	int timesSpedUp = 0;
+	float multiTemp = .3f;
 	IEnumerator initiate() {
 		
 		initiateSpeed = false;
-		yield return new WaitForSeconds(5);
+		//yield return new WaitForSeconds(5);
 
 		float time = 0f;
-		float totalTime = 5f;
-		float tempPlayer = player.GetComponent<PlayerMovement> ().speed;
-		float tempTele = teleporter.GetComponent<Teleport> ().speed;
+		float totalTime = 10f;
 		float initSpeed = speedMultiplyer;
-		float targetSpeed = speedMultiplyer + .3f;
+		float targetSpeed = speedMultiplyer + multiTemp;
 
-		while (time < totalTime) {
+		while (time < totalTime && !slowDown) {
 			
 			speedMultiplyer = Mathf.Lerp (initSpeed, targetSpeed, time / totalTime);
 
@@ -49,6 +58,32 @@ public class speedUp : MonoBehaviour {
 		yield return null;
 		initiateSpeed = true;
 		Debug.Log (timesSpedUp);
+	}
+
+	IEnumerator initiateSlow() {
+		
+		initiateSlowDown = false;
+
+		float time = 0f;
+		float totalTime = 5f;
+		float initSpeed = speedMultiplyer;
+		float targetSpeed = speedMultiplyer - .5f;
+
+		while (time < totalTime && speedMultiplyer > 1) {
+
+			speedMultiplyer = Mathf.Lerp (initSpeed, targetSpeed, time / totalTime);
+
+			yield return null;
+
+			time += Time.deltaTime;
+
+			player.GetComponent<PlayerMovement> ().speed = tempPlayer * speedMultiplyer;
+			teleporter.GetComponent<Teleport> ().speed = tempTele * speedMultiplyer;
+		}
+
+		yield return null;
+			
+		slowDown = false;
 	}
 		
 }
