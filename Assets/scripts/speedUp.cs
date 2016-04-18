@@ -11,6 +11,8 @@ public class speedUp : MonoBehaviour {
 	private float tempTele;
 	public bool slowDown = false;
 	public bool initiateSlowDown = false;
+	public float slowAmount;
+	public float slowDuration;
 
 	// Use this for initialization
 	void Start () {
@@ -65,9 +67,9 @@ public class speedUp : MonoBehaviour {
 		initiateSlowDown = false;
 
 		float time = 0f;
-		float totalTime = 5f;
+		float totalTime = slowDuration;
 		float initSpeed = speedMultiplyer;
-		float targetSpeed = speedMultiplyer - .5f;
+		float targetSpeed = speedMultiplyer - slowAmount;
 
 		while (time < totalTime && speedMultiplyer > 1) {
 
