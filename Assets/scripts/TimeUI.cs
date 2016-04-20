@@ -22,5 +22,9 @@ public class TimeUI : MonoBehaviour {
 
 		t.text = temp + time;
 	}
+
+	public void RestartTime() {
+		time = 0;
+	}
 }
 

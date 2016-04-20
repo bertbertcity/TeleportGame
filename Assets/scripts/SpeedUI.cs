@@ -15,6 +15,7 @@ public class SpeedUI : MonoBehaviour {
 		temp = t.text;
 	
 	}
+
 	
 	// Update is called once per frame
 	void Update () {

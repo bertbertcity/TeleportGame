@@ -4,10 +4,19 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour {
 
 	public float speed;
-
+	private Animator anim;
 	// Use this for initialization
 	void Start () {
-	
+		anim = GetComponent<Animator>();
+		anim.SetLayerWeight(1, 1f);
+		Vector3 targetDirection = new Vector3 (1, 0, 0);
+		Quaternion targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
+		GetComponent<Rigidbody> ().MoveRotation (targetRotation);
+		//anim.SetFloat("Speed", 1);
+	}
+
+	void Awake () {
+		
 	}
 	
 	// Update is called once per frame
@@ -16,10 +25,10 @@ public class PlayerMovement : MonoBehaviour {
 
 		gameObject.transform.position += move * Time.deltaTime;
 
-		Quaternion rotation = Quaternion.Euler (0, 0, 0);
-
-		if (gameObject.transform.localRotation != rotation) {
-			gameObject.transform.localRotation = rotation;
-		}
+//		Quaternion rotation = Quaternion.Euler (0, 0, 0);
+//
+//		if (gameObject.transform.localRotation != rotation) {
+//			gameObject.transform.localRotation = rotation;
+//		}
 	}
 }

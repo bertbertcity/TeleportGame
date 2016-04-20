@@ -2,10 +2,8 @@
 using System.Collections;
 
 public class DeathTrigger : MonoBehaviour {
-
 	// Use this for initialization
 	void Start () {
-	
 	}
 	
 	// Update is called once per frame
@@ -16,6 +14,7 @@ public class DeathTrigger : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		if (other.CompareTag("Player")) {
 			Application.LoadLevel (Application.loadedLevel);
+
 		}
 	
 	}
