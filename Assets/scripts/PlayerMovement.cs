@@ -8,10 +8,6 @@ public class PlayerMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator>();
-		anim.SetLayerWeight(1, 1f);
-		Vector3 targetDirection = new Vector3 (1, 0, 0);
-		Quaternion targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
-		GetComponent<Rigidbody> ().MoveRotation (targetRotation);
 		//anim.SetFloat("Speed", 1);
 	}
 
@@ -24,7 +20,9 @@ public class PlayerMovement : MonoBehaviour {
 		Vector3 move = new Vector3 (speed, 0, 0);
 
 		gameObject.transform.position += move * Time.deltaTime;
-
+		Vector3 targetDirection = new Vector3 (1, 0, 0);
+		Quaternion targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
+		GetComponent<Rigidbody> ().MoveRotation (targetRotation);
 //		Quaternion rotation = Quaternion.Euler (0, 0, 0);
 //
 //		if (gameObject.transform.localRotation != rotation) {
