@@ -3,7 +3,6 @@ using System.Collections;
 
 public class Play : MonoBehaviour {
 		// Use this for initialization
-	public string newlevel = "EliseModule";
 	void Start () {
 
 	}
@@ -13,7 +12,7 @@ public class Play : MonoBehaviour {
 	}
 
 	public void NextLevel(){
-		Application.LoadLevel ("EliseModule");
+		Application.LoadLevel ("PrototypeScene");
 		Debug.Log("Next scene");
 	}
 }

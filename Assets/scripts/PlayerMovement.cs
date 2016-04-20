@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator>();
-		//anim.SetFloat("Speed", 1);
+		//anim.SetFloat("Speed", 1.0f);
 	}
 
 	void Awake () {
