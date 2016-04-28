@@ -6,6 +6,7 @@ public class speedUp : MonoBehaviour {
 	public GameObject player;
 	public GameObject teleporter;
 	public float speedMultiplyer = 1;
+	public float fastestSpeed = 1;
 	public bool initiateSpeed = true;
 	private float tempPlayer;
 	private float tempTele;
@@ -22,6 +23,10 @@ public class speedUp : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (speedMultiplyer > fastestSpeed) {
+			fastestSpeed = speedMultiplyer;
+		}
 
 		if (initiateSpeed && !slowDown) {
 			StartCoroutine (initiate ());
