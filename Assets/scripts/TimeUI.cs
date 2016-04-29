@@ -10,6 +10,7 @@ public class TimeUI : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		RestartTime (); // doesn't work?
 		t = GetComponent<Text> ();
 		temp = t.text;
 

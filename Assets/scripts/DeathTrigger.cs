@@ -25,7 +25,7 @@ public class DeathTrigger : MonoBehaviour {
 
 		if (active) {
 			if (Input.GetKeyDown (KeyCode.Space)) {
-				time.RestartTime();
+				time.RestartTime(); // doesn't work?
 				Application.LoadLevel (Application.loadedLevel);
 			}
 		}
