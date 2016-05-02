@@ -18,6 +18,7 @@ public class Teleport : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
 		Vector3 up = new Vector3 (speed, 0, 0);
 		Vector3 left = new Vector3 (0, 0, speed);
 		Vector3 right = new Vector3 (0, 0, -speed);
