@@ -34,7 +34,6 @@ public class DeathTrigger : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 		if (other.CompareTag("Player")) {
-			Debug.Log ("death trigger");
 			oldCanvas.SetActive (false);
 			newCanvas.SetActive (true);
 			active = true;
