@@ -123,10 +123,6 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 491962, guid: a9003b1269fd44b46bf3d4e98d8d5fd2, type: 2}
       propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 184144, guid: a9003b1269fd44b46bf3d4e98d8d5fd2, type: 2}
-      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -630,6 +626,7 @@ MonoBehaviour:
   initiateSlowDown: 0
   slowAmount: 0
   slowDuration: 0
+  run: {fileID: 0}
 --- !u!4 &1190402971
 Transform:
   m_ObjectHideFlags: 0
