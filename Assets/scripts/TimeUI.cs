@@ -19,12 +19,13 @@ public class TimeUI : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		time = (float)Math.Round ((double)Time.time, 2);
+		time += Time.deltaTime;
 
-		t.text = temp + time;
+		t.text = temp + Math.Round((double)time, 2);
 	}
 
 	public void RestartTime() {
+		Debug.Log ("restart time");
 		time = 0;
 	}
 }
