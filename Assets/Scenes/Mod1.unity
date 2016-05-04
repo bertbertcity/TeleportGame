@@ -198,7 +198,6 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -407,10 +406,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oldCanvas: {fileID: 0}
   newCanvas: {fileID: 0}
-  scoreScript: {fileID: 0}
-  maxSpeed: {fileID: 0}
-  time: {fileID: 0}
-  ethan: {fileID: 0}
 --- !u!1 &941533950
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,6 +438,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2.5
+  camera: {fileID: 0}
+  leftArm: {fileID: 0}
+  rightArm: {fileID: 0}
+  leftLeg: {fileID: 0}
+  rightLeg: {fileID: 0}
 --- !u!54 &941533952
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -730,10 +730,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oldCanvas: {fileID: 0}
   newCanvas: {fileID: 0}
-  scoreScript: {fileID: 0}
-  maxSpeed: {fileID: 0}
-  time: {fileID: 0}
-  ethan: {fileID: 0}
 --- !u!1 &1660805024
 GameObject:
   m_ObjectHideFlags: 0
@@ -1000,7 +996,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1849477922
 Light:
   m_ObjectHideFlags: 0
@@ -1040,7 +1036,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1849477921}
-  m_LocalRotation: {x: 0.40821794, y: -0.23456973, z: 0.109381676, w: 0.87542605}
+  m_LocalRotation: {x: -0.18524675, y: 0.62596536, z: -0.17914331, w: -0.7360426}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []

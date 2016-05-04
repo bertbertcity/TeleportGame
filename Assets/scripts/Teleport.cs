@@ -26,6 +26,7 @@ public class Teleport : MonoBehaviour {
 		if (Input.GetKey (KeyCode.UpArrow)) {
 			gameObject.transform.position += up * Time.deltaTime;
 			upButtonDown = true;
+			jump = true;
 		}
 		if (Input.GetKeyUp (KeyCode.UpArrow)) {
 			upButtonDown = false;
@@ -33,6 +34,7 @@ public class Teleport : MonoBehaviour {
 		if (Input.GetKey (KeyCode.LeftArrow)) {
 			gameObject.transform.position += left * Time.deltaTime;
 			leftButtonDown = true;
+			jump = true;
 		}
 		if (Input.GetKeyUp (KeyCode.LeftArrow)) {
 			leftButtonDown = false;
@@ -40,13 +42,15 @@ public class Teleport : MonoBehaviour {
 		if (Input.GetKey (KeyCode.RightArrow)) {
 			gameObject.transform.position += right * Time.deltaTime;
 			rightButtonDown = true;
+			jump = true;
 		}
 		if (Input.GetKeyUp (KeyCode.RightArrow)) {
 			rightButtonDown = false;
 		}
 
-		if (!upButtonDown && !rightButtonDown && !leftButtonDown) {
-			Vector3 jumpPosition = new Vector3 (transform.position.x, player.transform.position.y + .01f, transform.position.z);
+		if (!upButtonDown && !rightButtonDown && !leftButtonDown && jump) {
+			jump = false;
+			Vector3 jumpPosition = new Vector3 (transform.position.x, player.transform.position.y, transform.position.z);
 			player.transform.position = jumpPosition;
 			transform.position = new Vector3 (player.transform.position.x, transform.position.y, player.transform.position.z);
 			sm.EnableSmoothTemporary (0.25f);
