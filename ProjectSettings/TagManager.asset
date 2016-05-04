@@ -8,6 +8,10 @@ TagManager:
   - big
   - platforms
   - end
+  - portal
+  - DeathTrigger
+  - prevModule
+  - currModule
   layers:
   - Default
   - TransparentFX
