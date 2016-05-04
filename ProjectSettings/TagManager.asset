@@ -8,10 +8,19 @@ TagManager:
   - big
   - platforms
   - end
+<<<<<<< HEAD
+  - Explosion
+  - WallLayer
+  - Collider
+  - Fire
+  - destroy
+  - fireball
+=======
   - portal
   - DeathTrigger
   - prevModule
   - currModule
+>>>>>>> 609e8f0fde81abf993fc3c1ebc78baaf2c4c44dc
   layers:
   - Default
   - TransparentFX
