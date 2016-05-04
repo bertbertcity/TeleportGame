@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - portal
+  - platforms
+  - small
+  - big
+  - DeathTrigger
   layers:
   - Default
   - TransparentFX

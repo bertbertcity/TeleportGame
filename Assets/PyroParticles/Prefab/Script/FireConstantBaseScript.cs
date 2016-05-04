@@ -74,7 +74,7 @@ namespace DigitalRuby.PyroParticles
         [HideInInspector]
         public LoopingAudioSource LoopingAudioSource;
 
-        protected override void Awake()
+        /*protected override void Awake()
         {
             base.Awake();
 
@@ -82,7 +82,7 @@ namespace DigitalRuby.PyroParticles
             LoopingAudioSource = new LoopingAudioSource(this, AudioSource, StartTime, StopTime);
             Duration = 999999999;
         }
-
+*/
         protected override void Update()
         {
             base.Update();

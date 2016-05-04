@@ -28,7 +28,7 @@ namespace DigitalRuby.PyroParticles{
 
 		private void pewpew(){
 
-			if (Input.GetKeyDown(KeyCode.Space)){
+			if (Input.GetKeyDown(KeyCode.F)){
 				BeginEffect();
 			}
 		}
