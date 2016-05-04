@@ -25,7 +25,6 @@ public class TimeUI : MonoBehaviour {
 	}
 
 	public void RestartTime() {
-		Debug.Log ("restart time");
 		time = 0;
 	}
 }

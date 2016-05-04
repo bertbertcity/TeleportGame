@@ -38,11 +38,11 @@ namespace DigitalRuby.PyroParticles{
 		{
 
 				Debug.Log ("It's working");
-			Instantiate (fireball, 
-				new Vector3(GameObject.Find ("char_ethan").transform.position.x, 
-				GameObject.Find ("char_ethan").transform.position.y+0.8f,
-				GameObject.Find ("char_ethan").transform.position.z), 
-				GameObject.Find("char_ethan").transform.rotation);
+			//Instantiate (fireball, 
+//			new Vector3 (GameObject.Find ("char_ethan").transform.position.x, 
+//				GameObject.Find ("char_ethan").transform.position.y + 0.8f,
+//				GameObject.Find ("char_ethan").transform.position.z);
+//				GameObject.Find("char_ethan").transform.rotation);
 
 		}
 	}

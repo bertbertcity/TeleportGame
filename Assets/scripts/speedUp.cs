@@ -14,11 +14,14 @@ public class speedUp : MonoBehaviour {
 	public bool initiateSlowDown = false;
 	public float slowAmount;
 	public float slowDuration;
+	public Animator run;
+	float tempAnim;
 
 	// Use this for initialization
 	void Start () {
 		tempPlayer = player.GetComponent<PlayerMovement> ().speed;
 		tempTele = teleporter.GetComponent<Teleport> ().speed;
+		tempAnim = run.speed;
 	}
 	
 	// Update is called once per frame
@@ -59,12 +62,12 @@ public class speedUp : MonoBehaviour {
 
 			player.GetComponent<PlayerMovement> ().speed = tempPlayer * speedMultiplyer;
 			teleporter.GetComponent<Teleport> ().speed = tempTele * speedMultiplyer;
+			run.speed = tempAnim * speedMultiplyer;
 
 		}
 		timesSpedUp++;
 		yield return null;
 		initiateSpeed = true;
-		Debug.Log (timesSpedUp);
 	}
 
 	IEnumerator initiateSlow() {

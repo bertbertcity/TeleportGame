@@ -23,7 +23,6 @@ public class slowOrb : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 		if (other.CompareTag("Player")) {
-			Debug.Log ("collide");
 			if (smallOrb) {
 				speed.slowAmount = .025f;
 				speed.slowDuration = .5f;
