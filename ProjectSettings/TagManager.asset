@@ -8,6 +8,12 @@ TagManager:
   - big
   - platforms
   - end
+  - Explosion
+  - WallLayer
+  - Collider
+  - Fire
+  - destroy
+  - fireball
   layers:
   - Default
   - TransparentFX

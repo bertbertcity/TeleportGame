@@ -65,6 +65,7 @@ GameObject:
   - 114: {fileID: 11466612}
   - 54: {fileID: 5471416}
   - 108: {fileID: 10857032}
+  - 114: {fileID: 11458728}
   m_Layer: 0
   m_Name: FireboltCollider
   m_TagString: Untagged
@@ -91,7 +92,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 141530}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 265, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 469746}
@@ -365,6 +366,18 @@ MonoBehaviour:
   IntensityMaxRange:
     Minimum: 0
     Maximum: 8
+--- !u!114 &11458728
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 151328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a163a20e6a38f4c7581164a149e03732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firee: {fileID: 131164, guid: 3c5f4e32698bdb04eaed647f60310510, type: 2}
 --- !u!114 &11466612
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -399,14 +412,14 @@ MonoBehaviour:
   ProjectileColliderObject: {fileID: 151328}
   ProjectileCollisionSound: {fileID: 8299452}
   ProjectileExplosionParticleSystem: {fileID: 19843370}
-  ProjectileExplosionRadius: 0
-  ProjectileExplosionForce: 0
+  ProjectileExplosionRadius: 3
+  ProjectileExplosionForce: 500
   ProjectileColliderDelay: 0
   ProjectileColliderSpeed: 25
   ProjectileDirection: {x: 0, y: 0, z: 1}
   ProjectileCollisionLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
   ProjectileDestroyParticleSystemsOnCollision:
   - {fileID: 19813804}
 --- !u!135 &13563630
