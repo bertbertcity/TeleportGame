@@ -9,10 +9,10 @@ public class PlayerMovement : MonoBehaviour {
 	private Vector3 targetDirection;
 	private GameObject player;
 	public Camera camera;
-	public GameObject leftArm;
-	public GameObject rightArm;
-	public GameObject leftLeg;
-	public GameObject rightLeg;
+//	public GameObject leftArm;
+//	public GameObject rightArm;
+//	public GameObject leftLeg;
+//	public GameObject rightLeg;
 
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player");
@@ -37,10 +37,10 @@ public class PlayerMovement : MonoBehaviour {
 			Rigidbody rb = (Rigidbody) player.GetComponent<Rigidbody> ();
 			Vector3 pos = rb.transform.position;
 			var dir = pos - new Vector3 (pos.x, pos.y - 3, pos.z);
-			rightArm.GetComponent<Rigidbody> ().AddForce (dir * 300.0f);
-			leftArm.GetComponent<Rigidbody> ().AddForce (dir * 300.0f);
-			leftLeg.GetComponent<Rigidbody> ().AddForce (dir * 300.0f);
-			rightLeg.GetComponent<Rigidbody> ().AddForce (dir * 300.0f);
+//			rightArm.GetComponent<Rigidbody> ().AddForce (dir * 300.0f);
+//			leftArm.GetComponent<Rigidbody> ().AddForce (dir * 300.0f);
+//			leftLeg.GetComponent<Rigidbody> ().AddForce (dir * 300.0f);
+//			rightLeg.GetComponent<Rigidbody> ().AddForce (dir * 300.0f);
 			//camera.transform.LookAt (player.transform);
 		}
 	}

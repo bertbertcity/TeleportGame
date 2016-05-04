@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/startpage.unity
+- path: Assets/Scenes/DJ SO FIRE.unity
   isLoaded: 1
   isActive: 1

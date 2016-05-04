@@ -184,6 +184,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -487,6 +488,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c63233786888a94bb99d3d4bf13d2c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  oldCanvas: {fileID: 0}
+  newCanvas: {fileID: 0}
+  scoreScript: {fileID: 0}
+  maxSpeed: {fileID: 0}
+  time: {fileID: 0}
+  ethan: {fileID: 0}
 --- !u!1 &941533950
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,6 +706,7 @@ MonoBehaviour:
   player: {fileID: 941533950}
   teleporter: {fileID: 1928020162}
   speedMultiplyer: 1
+  fastestSpeed: 1
   initiateSpeed: 1
   slowDown: 0
   initiateSlowDown: 0
@@ -803,6 +811,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c63233786888a94bb99d3d4bf13d2c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  oldCanvas: {fileID: 0}
+  newCanvas: {fileID: 0}
+  scoreScript: {fileID: 0}
+  maxSpeed: {fileID: 0}
+  time: {fileID: 0}
+  ethan: {fileID: 0}
 --- !u!1 &1445206750
 GameObject:
   m_ObjectHideFlags: 0
