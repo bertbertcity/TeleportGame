@@ -4,10 +4,11 @@ using System.Collections;
 public class destroyObs : MonoBehaviour {
 
 	public GameObject firee;
+	public destroyFire firebolt;
 
 	// Use this for initialization
 	void Start () {
-
+		firebolt = FindObjectOfType<destroyFire> ();
 	}
 	
 	// Update is called once per frame
@@ -20,7 +21,7 @@ public class destroyObs : MonoBehaviour {
 		if (col.CompareTag("destroy")) {
 
 			Instantiate (firee, col.transform.position, col.transform.rotation);
-
+			firebolt.die = true;
 			Destroy(col.gameObject);
 			Debug.Log ("what is going on");
 		}

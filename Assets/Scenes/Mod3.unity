@@ -123,6 +123,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 491962, guid: a9003b1269fd44b46bf3d4e98d8d5fd2, type: 2}
       propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 184144, guid: a9003b1269fd44b46bf3d4e98d8d5fd2, type: 2}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -407,10 +411,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oldCanvas: {fileID: 0}
   newCanvas: {fileID: 0}
-  scoreScript: {fileID: 0}
-  maxSpeed: {fileID: 0}
-  time: {fileID: 0}
-  ethan: {fileID: 0}
 --- !u!1 &941533950
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,6 +443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2.5
+  camera: {fileID: 0}
 --- !u!54 &941533952
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -730,10 +731,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oldCanvas: {fileID: 0}
   newCanvas: {fileID: 0}
-  scoreScript: {fileID: 0}
-  maxSpeed: {fileID: 0}
-  time: {fileID: 0}
-  ethan: {fileID: 0}
 --- !u!1 &1445206750
 GameObject:
   m_ObjectHideFlags: 0
