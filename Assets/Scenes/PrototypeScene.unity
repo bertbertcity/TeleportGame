@@ -3371,7 +3371,7 @@ Transform:
   m_PrefabParentObject: {fileID: 452458, guid: 8d82692052e0040baaf29c7e1bb39b02, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1328469565}
-  m_LocalRotation: {x: -0.036724575, y: 0.70615256, z: 0.7061524, w: 0.03672468}
+  m_LocalRotation: {x: -0.03672458, y: 0.7061526, z: 0.70615244, w: 0.036724683}
   m_LocalPosition: {x: 151.3, y: -3.3, z: -3.2}
   m_LocalScale: {x: 0.60865396, y: 69.11377, z: 0.60865325}
   m_Children: []
@@ -3907,7 +3907,7 @@ Transform:
   m_PrefabParentObject: {fileID: 447268, guid: 8d82692052e0040baaf29c7e1bb39b02, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1440637335}
-  m_LocalRotation: {x: -0.03672458, y: 0.7061526, z: 0.70615244, w: 0.036724683}
+  m_LocalRotation: {x: -0.036724575, y: 0.70615256, z: 0.7061524, w: 0.03672468}
   m_LocalPosition: {x: 6.5, y: -3.3, z: -4.2}
   m_LocalScale: {x: 0.6086534, y: 69.11373, z: 0.60865307}
   m_Children: []
@@ -4440,7 +4440,7 @@ GameObject:
   - 4: {fileID: 483129518}
   m_Layer: 0
   m_Name: EliseModule
-  m_TagString: Untagged
+  m_TagString: currModule
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
