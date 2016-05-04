@@ -1566,9 +1566,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformModules:
-  - {fileID: 135396, guid: a29cda9ea6d834fb7893faf4a6faef13, type: 2}
-  - {fileID: 115960, guid: 8d82692052e0040baaf29c7e1bb39b02, type: 2}
-  - {fileID: 105858, guid: b625f49270338450dbb8835f782c7fc8, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!4 &783357208
 Transform:
   m_ObjectHideFlags: 0
